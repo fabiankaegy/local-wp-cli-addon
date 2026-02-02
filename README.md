@@ -32,11 +32,14 @@ The add-on adds the following to your `.vscode/settings.json`:
 ## Usage
 
 1. Open your site in Local
-2. Go to the **Tools** tab
-3. Click **"VS Code Terminal"** in the sidebar
-4. Click **"Add Terminal Environment to VS Code"**
-5. Open your project in VS Code
-6. Open a new terminal - it will automatically have access to PHP, MySQL, WP-CLI, and Composer
+2. Go to the **Add-ons** menu in the Local sidebar, then **Installed**
+3. Turn the extension
+4. Restart Local
+5. Go to a site and then the **Tools** tab
+6. Click **"VS Code Terminal"** in the site sidebar
+7. Click **"Add Terminal Environment to VS Code"**
+8. Open your project in VS Code
+9. Open a new terminal - it will automatically have access to PHP, MySQL, WP-CLI, and Composer
 
 **Note:** The site must be running in Local for the commands to work (MySQL socket requires an active connection).
 
