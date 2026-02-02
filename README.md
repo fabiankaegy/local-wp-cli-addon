@@ -49,13 +49,13 @@ The add-on adds the following to your `.vscode/settings.json`:
 
 ```bash
 # Install dependencies
-yarn install
+npm install
 
 # Build the add-on
-yarn build
+npm build
 
 # Watch for changes
-yarn watch
+npm watch
 ```
 
 ### Installing locally
@@ -74,6 +74,3 @@ MIT
 ## Credits
 
 Inspired by the [Xdebug + VS Code add-on](https://github.com/nickcernis/local-addon-xdebug-vscode) by Pixel Jar.
-
-Created by [10up](https://10up.com).
-# local-wp-cli-addon

@@ -1,0 +1,38 @@
+{
+	"name": "local-addon-vscode-terminal",
+	"productName": "VS Code Terminal Environment",
+	"version": "1.0.0",
+	"description": "Automatically configures VS Code terminal with LocalWP environment variables for PHP, MySQL, WP-CLI, and Composer.",
+	"renderer": "lib/renderer.js",
+	"main": "lib/main.js",
+	"icon": "icon.svg",
+	"bgColor": "#0073e6",
+	"author": "10up <info@10up.com>",
+	"license": "MIT",
+	"slug": "vscode-terminal",
+	"scripts": {
+		"build": "tsc",
+		"watch": "npm run build --watch",
+		"prepare": "npm run build"
+	},
+	"devDependencies": {
+		"@getflywheel/local": "^8",
+		"@types/fs-extra": "^8.0.1",
+		"@types/node": "^14.0.0",
+		"typescript": "^3.7.5"
+	},
+	"dependencies": {
+		"@getflywheel/local-components": "^17.6.2",
+		"fs-extra": "^8.1.0",
+		"lodash": "^4.17.21",
+		"react": "^16.14.0"
+	},
+	"bundledDependencies": [
+		"@getflywheel/local-components",
+		"fs-extra",
+		"lodash"
+	],
+	"engines": {
+		"local-by-flywheel": "^6.5.2"
+	}
+}
