@@ -32,10 +32,25 @@ The add-on adds the following to your `.vscode/settings.json`:
 ## Usage
 
 1. Open your site in Local
-2. Go to the **Utilities** tab
-3. Click **"Add Terminal Environment to VS Code"**
-4. Open your project in VS Code
-5. Open a new terminal - it will automatically have access to PHP, MySQL, WP-CLI, and Composer
+2. Go to the **Tools** tab
+3. Click **"VS Code Terminal"** in the sidebar
+4. Click **"Add Terminal Environment to VS Code"**
+5. Open your project in VS Code
+6. Open a new terminal - it will automatically have access to PHP, MySQL, WP-CLI, and Composer
+
+**Note:** The site must be running in Local for the commands to work (MySQL socket requires an active connection).
+
+## Installation
+
+### From GitHub Releases
+
+1. Download the latest `local-addon-vscode-terminal.zip` from [Releases](../../releases)
+2. Extract the zip file
+3. Move the `local-addon-vscode-terminal` folder to your Local add-ons directory:
+   - **macOS**: `~/Library/Application Support/Local/addons/`
+   - **Windows**: `%APPDATA%\Local\addons\`
+   - **Linux**: `~/.config/Local/addons/`
+4. Restart Local
 
 ## Requirements
 
@@ -49,13 +64,13 @@ The add-on adds the following to your `.vscode/settings.json`:
 
 ```bash
 # Install dependencies
-npm install
+npm install --legacy-peer-deps
 
 # Build the add-on
-npm build
+npm run build
 
 # Watch for changes
-npm watch
+npm run watch
 ```
 
 ### Installing locally
